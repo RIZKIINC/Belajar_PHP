@@ -60,7 +60,7 @@ $domisili = ["Aceh","Jakarta","Bandung","Bekasi","Malang","Surabaya","Lainnya"];
                         <?php
                         foreach ($ar_skill as $skill => $s){
                             ?>
-                        <input type="checkbox" name="skill[]" value="<?= $skill ?>" checked><?= $skill ?>
+                        <input type="checkbox" name="skill[]" value="<?= $s." / " .$skill ?>"><?= $skill ?>
 
                         <?php } ?>
                     </td>
@@ -93,7 +93,7 @@ $domisili = ["Aceh","Jakarta","Bandung","Bekasi","Malang","Surabaya","Lainnya"];
 </fieldset>
 
 <?php
-// error_reporting(0);
+error_reporting(0);
 
     function rangeSkill($jml){
         if($jml <= 0) $range = "Tidak Memadai";
@@ -120,7 +120,8 @@ $domisili = ["Aceh","Jakarta","Bandung","Bekasi","Malang","Surabaya","Lainnya"];
 
         // fungsi Kategory skill
         $range = rangeSkill($jumlah);
-    }
+
+    
 
 
 ?>
@@ -146,11 +147,11 @@ $domisili = ["Aceh","Jakarta","Bandung","Bekasi","Malang","Surabaya","Lainnya"];
             <td>: <?= $prodi2 ?> </td>
         </tr>
         <tr>
-            <td>Skill</td>
+            <td>Point / Skill</td>
             <td>: 
                 <?php
-                foreach($skill2 as $s){ ?>
-                <?= $s ?> ,
+                foreach($skill2 as $s){ ?>|
+                <?= $s ?> |
                 <?php } ?>
             </td>
         </tr>
@@ -173,3 +174,5 @@ $domisili = ["Aceh","Jakarta","Bandung","Bekasi","Malang","Surabaya","Lainnya"];
     </table>
 
 </fieldset>
+
+<?php } ?>
