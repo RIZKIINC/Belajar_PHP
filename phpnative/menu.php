@@ -12,6 +12,22 @@
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
                                 Data Produk
                             </a>
+                            <a class="nav-link" href="admin.php?url=jenis_produk ">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                Data Jenis Produk
+                            </a>
+                            <a class="nav-link" href="admin.php?url=pelanggan ">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                Pelanggan
+                            </a>
+                            <a class="nav-link" href="admin.php?url=pesanan ">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                Pesanan
+                            </a>
+                            <a class="nav-link" href="admin.php?url=kartu ">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                Kartu
+                            </a>
                             <a class="nav-link" href="admin.php?url=contact">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
                                 Contact
