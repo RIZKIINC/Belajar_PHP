@@ -16,18 +16,20 @@
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
                                 Data Jenis Produk
                             </a>
+                            <hr>
                             <a class="nav-link" href="admin.php?url=pelanggan ">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
                                 Pelanggan
                             </a>
                             <a class="nav-link" href="admin.php?url=pesanan ">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                                 Pesanan
                             </a>
                             <a class="nav-link" href="admin.php?url=kartu ">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-credit-card"></i></div>
                                 Kartu
                             </a>
+                            <hr>
                             <a class="nav-link" href="admin.php?url=contact">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
                                 Contact
@@ -93,9 +95,9 @@
 
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
+                    <!-- <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
                         Start Bootstrap
-                    </div>
+                    </div> -->
                 </nav>
             </div>
