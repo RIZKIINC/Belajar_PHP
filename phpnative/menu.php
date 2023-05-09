@@ -4,37 +4,37 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Utama</div>
-                            <a class="nav-link" href="admin.php?url=dashboard ">
+                            <a class="nav-link" href="index.php?url=dashboard ">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="admin.php?url=product ">
+                            <a class="nav-link" href="index.php?url=product ">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
                                 Data Produk
                             </a>
-                            <a class="nav-link" href="admin.php?url=jenis_produk ">
+                            <a class="nav-link" href="index.php?url=jenis_produk ">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
                                 Data Jenis Produk
                             </a>
                             <hr>
-                            <a class="nav-link" href="admin.php?url=pelanggan ">
+                            <a class="nav-link" href="index.php?url=pelanggan ">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
                                 Pelanggan
                             </a>
-                            <a class="nav-link" href="admin.php?url=pesanan ">
+                            <a class="nav-link" href="index.php?url=pesanan ">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                                 Pesanan
                             </a>
-                            <a class="nav-link" href="admin.php?url=kartu ">
+                            <a class="nav-link" href="index.php?url=kartu ">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-credit-card"></i></div>
                                 Kartu
                             </a>
                             <hr>
-                            <a class="nav-link" href="admin.php?url=contact">
+                            <a class="nav-link" href="index.php?url=contact">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
                                 Contact
                             </a>
-                            <a class="nav-link" href="admin.php?url=about">
+                            <a class="nav-link" href="index.php?url=about">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-address-card"></i></div>
                                 About
                             </a>
