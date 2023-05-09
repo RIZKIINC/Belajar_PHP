@@ -1,10 +1,11 @@
-<br>
-
 <?php
 $obj_produk = new Produk();
 $data_produk = $obj_produk->dataProduk();
 
 ?>
+<h1 class="mt-4">Input Produk</h1>
+<br>
+
 <form action="produk_controller.php" method="POST">
       <div class="form-group row">
         <label for="text1" class="col-4 col-form-label">Kode</label> 

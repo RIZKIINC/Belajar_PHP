@@ -14,7 +14,7 @@ class Produk {
     }
 
     public function getProduk($id){
-        $sql = "SELECT produk.*, jenis_produk.nama as Katergori FROM produk INNER JOIN jenis_produk ON jenis_produk.id = produk.jenis_produk_id WHERE produk.id = ?";
+        $sql = "SELECT produk.*, jenis_produk.nama as Kategori FROM produk INNER JOIN jenis_produk ON jenis_produk.id = produk.jenis_produk_id WHERE produk.id = ?";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute([$id]);
         $rs = $ps->fetch();

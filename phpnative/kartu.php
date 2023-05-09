@@ -7,8 +7,9 @@ $pelanggan = $model->dataKartu();
 <h1 class="mt-4">Kartu</h1>
 <div class="card mb-4">
     <div class="card-header">
-        <i class="fas fa-table me-1"></i>
-        Kartu
+        <!-- <i class="fas fa-table me-1"></i>
+        Kartu -->
+        <a href="index.php?url=kartu_form" class="btn btn-primary btn-small">Tambah</a>
     </div>
     <div class="card-body">
         <table id="datatablesSimple">

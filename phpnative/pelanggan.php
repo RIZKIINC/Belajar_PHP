@@ -7,8 +7,9 @@ $pelanggan = $model->dataPelanggan();
 <h1 class="mt-4">Pelanggan</h1>
 <div class="card mb-4">
     <div class="card-header">
-        <i class="fas fa-table me-1"></i>
-        Pelanggan
+        <!-- <i class="fas fa-table me-1"></i>
+        Pelanggan -->
+        <a href="index.php?url=pelanggan_form" class="btn btn-primary btn-small">Tambah</a>
     </div>
     <div class="card-body">
         <table id="datatablesSimple">
@@ -23,6 +24,7 @@ $pelanggan = $model->dataPelanggan();
                     <th>Email</th>
                     <th>Kartu ID</th>
                     <th>Alamat</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tfoot>
@@ -36,6 +38,7 @@ $pelanggan = $model->dataPelanggan();
                     <th>Email</th>
                     <th>Kartu ID</th>
                     <th>Alamat</th>
+                    <th>Action</th>
                 </tr>
             </tfoot>
             <tbody>
@@ -53,6 +56,16 @@ $pelanggan = $model->dataPelanggan();
                     <td><?= $row ['email'] ?></td>
                     <td><?= $row ['kartu_id'] ?></td>   
                     <td><?= $row ['alamat'] ?></td>   
+                    <td>
+                        <form action="pelanggan_controller.php" method="POST">
+                        <a class="btn btn-info btn-sm" href="index.php?url=pelanggan_detail&id=<?= $row['id'] ?>">Detail</a>
+
+                            <!-- <a class="btn btn-warning btn-sm">Ubah</a>
+                            <a class="btn btn-danger btn-sm">Hapus</a> -->
+
+                            <input type="hidden" nama="idx" value="<?= $row['id'] ?>">
+                        </form>
+                    </td>
                 </tr>
                 <?php
                     $no++;

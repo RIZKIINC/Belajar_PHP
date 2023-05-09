@@ -12,6 +12,13 @@ class Pesanan {
         $rs = $ps->fetchAll();
         return $rs;
     }
+
+    public function simpan($data){
+        $sql = "INSERT INTO pesanan (tanggal, total, pelanggan_id)
+        VALUES (?,?,?)";
+        $ps = $this->koneksi->prepare($sql);
+        $ps->execute($data);
+    }
 }
 
 ?>
