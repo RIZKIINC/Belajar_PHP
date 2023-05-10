@@ -14,7 +14,7 @@ class Pelanggan {
     }
 
     public function getPelanggan($id){
-        $sql = "SELECT pelanggan.*, jenis_pelanggan.nama_pelanggan as Kategori FROM pelanggan INNER JOIN jenis_pelanggan ON jenis_pelanggan.id = pelanggan.jenis_pelanggan_id WHERE pelanggan.id = ?";
+        $sql = "SELECT * FROM pelanggan WHERE pelanggan.id=? ";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute([$id]);
         $rs = $ps->fetch();
