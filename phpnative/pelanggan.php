@@ -58,12 +58,11 @@ $pelanggan = $model->dataPelanggan();
                     <td><?= $row ['alamat'] ?></td>   
                     <td>
                         <form action="pelanggan_controller.php" method="POST">
-                        <a class="btn btn-info btn-sm" href="index.php?url=pelanggan_detail&id=<?= $row['id'] ?>">Detail</a>
+                            <a class="btn btn-info btn-sm" href="index.php?url=pelanggan_detail&id=<?= $row['id'] ?>">Detail</a>
+                            <a class="btn btn-warning btn-sm" href="index.php?url=pelanggan_form&idedit=<?= $row ['id'] ?>">Ubah</a>
+                            <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" onclick="return confirm('Anda yakin Ingin Menghapusnya?')">Hapus</button>
 
-                            <!-- <a class="btn btn-warning btn-sm">Ubah</a>
-                            <a class="btn btn-danger btn-sm">Hapus</a> -->
-
-                            <input type="hidden" nama="idx" value="<?= $row['id'] ?>">
+                            <input type="hidden" name="idx" value="<?= $row['id'] ?>">
                         </form>
                     </td>
                 </tr>
