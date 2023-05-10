@@ -1,4 +1,8 @@
 <?php
+// Mengambil data dari pelanggan.php
+$model = new Pelanggan();
+$pelanggan = $model->dataPelanggan();
+
 error_reporting(0);
 
 $obj_produk = new Pesanan();
@@ -25,7 +29,20 @@ $prod = !empty($idedit) ? $obj_produk->getPesanan($idedit) : array();
       <div class="form-group row">
         <label for="text3" class="col-4 col-form-label">Pelanggan ID</label> 
         <div class="col-8">
-          <input id="pelanggan_id" name="pelanggan_id" type="text" class="form-control" value="<?= $prod['pelanggan_id'] ?>">
+        <select id="pelanggan_id" name="pelanggan_id" type="text" class="form-control" value="<?= $prod['pelanggan_id'] ?>">
+
+          <?php
+              $no = 1;
+              foreach ($pelanggan as $row){
+          ?>
+          <option value="<?= $no ?>"><?= $row['nama_pelanggan'] ?></option>
+          <?php
+              $no++;
+              }
+          ?>
+
+        </select>
+          <!-- <input id="pelanggan_id" name="pelanggan_id" type="text" class="form-control" value="<?= $prod['pelanggan_id'] ?>"> -->
         </div>
       </div>
       <div class="form-group row">

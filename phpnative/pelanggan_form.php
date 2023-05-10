@@ -1,4 +1,10 @@
 <?php
+// Mengambil data dari Kartu.php
+$model = new Kartu();
+$pelanggan = $model->dataKartu();
+
+error_reporting(0);
+
 $obj_produk = new Pelanggan();
 $data_produk = $obj_produk->dataPelanggan();
 $idedit = $_REQUEST['idedit'];
@@ -23,7 +29,11 @@ $prod = !empty($idedit) ? $obj_produk->getPelanggan($idedit) : array();
       <div class="form-group row">
         <label for="text3" class="col-4 col-form-label">Jenis Kelamin</label> 
         <div class="col-8">
-          <input id="jk" name="jk" type="text" class="form-control" value="<?= $prod['jk'] ?>">
+          <select id="jk" name="jk" type="text" class="form-control" value="<?= $prod['jk'] ?>">
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
+          </select>
+          <!-- <input id="jk" name="jk" type="text" class="form-control" value="<?= $prod['jk'] ?>"> -->
         </div>
       </div>
       <div class="form-group row">
@@ -47,7 +57,20 @@ $prod = !empty($idedit) ? $obj_produk->getPelanggan($idedit) : array();
       <div class="form-group row">
         <label for="text" class="col-4 col-form-label">Kartu ID</label> 
         <div class="col-8">
-          <input id="kartu_id" name="kartu_id" type="text" class="form-control" value="<?= $prod['kartu_id'] ?>">
+        <select id="kartu_id" name="kartu_id" type="text" class="form-control" value="<?= $prod['kartu_id'] ?>">
+
+          <?php
+              $no = 1;
+              foreach ($pelanggan as $row){
+          ?>
+          <option value="<?= $no ?>"><?= $row['nama'] ?></option>
+          <?php
+              $no++;
+              }
+          ?>
+
+        </select>
+          <!-- <input id="kartu_id" name="kartu_id" type="text" class="form-control" value="<?= $prod['kartu_id'] ?>"> -->
         </div>
       </div> 
       <div class="form-group row">
