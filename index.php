@@ -1,4 +1,6 @@
 <?php
+include_once 'phpnative/koneksi.php';
+include_once 'phpnative/models/Produk.php';
 
 include_once 'header.php';
 

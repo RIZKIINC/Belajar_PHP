@@ -12,7 +12,6 @@ $prod = !empty($idedit) ? $obj_produk->getProduk($idedit) : array();
 ?>
 <h1 class="mt-4">Input Produk</h1>
 <br>
-
 <form action="produk_controller.php" method="POST">
       <div class="form-group row">
         <label for="text1" class="col-4 col-form-label">Kode</label> 
@@ -77,12 +76,12 @@ $prod = !empty($idedit) ? $obj_produk->getProduk($idedit) : array();
           if(empty($idedit)){
 
           ?>
-          <button name="proses" type="submit" value="simpan" class="btn btn-primary">Submit</button>
+          <button name="proses" type="submit" value="simpan" class="btn btn-success">Submit</button>
           <?php
           }
           else {
             ?>
-            <button name="proses" type="submit" value="ubah" class="btn btn-primary">Update</button>
+            <button name="proses" type="submit" value="ubah" class="btn btn-success">Update</button>
             <input type="hidden" name="idx" value="<?= $idedit ?>">
             <?php
           }

@@ -52,12 +52,12 @@ $prod = !empty($idedit) ? $obj_produk->getPesanan($idedit) : array();
           if(empty($idedit)){
 
           ?>
-          <button name="proses" type="submit" value="simpan" class="btn btn-primary">Submit</button>
+          <button name="proses" type="submit" value="simpan" class="btn btn-success">Submit</button>
           <?php
           }
           else {
             ?>
-            <button name="proses" type="submit" value="ubah" class="btn btn-primary">Update</button>
+            <button name="proses" type="submit" value="ubah" class="btn btn-success">Update</button>
             <input type="hidden" name="idx" value="<?= $idedit ?>">
             <?php
           }

@@ -42,8 +42,8 @@ $pelanggan = $model->dataKartu();
                     <td><?= $no ?></td>
                     <td><?= $row ['kode'] ?></td>
                     <td><?= $row ['nama'] ?></td>
-                    <td><?= $row ['diskon'] ?></td>  
-                    <td><?= $row ['iuran'] ?></td>  
+                    <td><?= 'Rp, '. number_format($row ['diskon'], 0, ",", ".") ?></td>  
+                    <td><?= 'Rp, '. number_format($row ['iuran'], 0, ",", ".") ?></td>  
                     <td>
                         <form action="kartu_controller.php" method="POST">
                             <a class="btn btn-info btn-sm" href="index.php?url=kartu_detail&id=<?= $row['id'] ?>">Detail</a>
